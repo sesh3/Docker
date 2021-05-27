@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 #команда перед созданием образа
 RUN pip install --no-cache-dir -r requirements.txt
-#Декларирования проброски портов
+#Декларирование открытия порта
 EXPOSE 8080
 #выполнить при запуске контейнера
 CMD ["python", "app.py"]
